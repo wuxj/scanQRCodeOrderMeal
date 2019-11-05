@@ -1,0 +1,226 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/index",
+		
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/user-center/my-index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/shop-store/index",
+			"style": {
+				"navigationBarTitleText": "店铺首页",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/user-center/perfectly-ident-info",
+			"style": {
+				"navigationBarTitleText": "完善身份信息"
+			}
+		},
+		
+		{
+			"path": "pages/user-center/perfectly-base-info",
+			"style": {
+				"navigationBarTitleText": "完善基本信息"
+			}
+		},
+		{
+			"path": "pages/shop-store/briefinfo",
+			"style": {
+				"navigationBarTitleText": "公司简介"
+			}
+		},
+
+		{
+			"path": "pages/user-center/ident-son-category",
+			"style": {
+				"navigationBarTitleText": "配件"
+			}
+		},
+		{
+			"path": "pages/user-center/ident-son-carbrand",
+			"style": {
+				"navigationBarTitleText": "车型 / 品牌"
+			}
+		},
+		{
+			"path": "pages/search/company-list",
+			"style": {
+				"navigationBarTitleText": "搜索公司结果"
+			}
+		},
+		{
+			"path": "pages/search/product-list",
+			"style": {
+				"navigationBarTitleText": "搜索产品结果"
+			}
+		},
+		{
+			"path": "pages/search/filter-search-box",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/shop-store/shop-detail",
+			"style": {
+				"navigationBarTitleText": "店铺名片详细信息"
+			}
+		},
+		{
+			"path": "pages/shop-store/product-detail",
+			"style": {
+				"navigationBarTitleText": "商品详情"
+			}
+		},
+		{
+			"path": "pages/shop-store/classify",
+			"style": {
+				"navigationBarTitleText": "店铺分类"
+			}
+		},
+		
+		{
+			"path": "pages/shop-store/contact",
+			"style": {
+				"navigationBarTitleText": "联系方式"
+			}
+		},
+		
+		{
+			"path": "pages/find-out/index",
+			"style": {
+				"navigationBarTitleText": "发现",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/home/take-businesscircle",
+			"style": {
+				"navigationBarTitleText": "订阅地区"
+			}
+		},
+		{
+			"path": "pages/home/take-carbrand",
+			"style": {
+				"navigationBarTitleText": "订阅车型 / 品牌"
+			}
+		},
+		{
+			"path": "pages/user-center/verify-phone",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/inquiry/inquiry-form/index",
+			"style": {
+				"navigationBarTitleText": "去询价"
+			}
+		},
+		{
+			"path": "pages/inquiry/inquiry-form/cartype-step-index",
+			"style": {
+				"navigationBarTitleText": "选择车型"
+			}
+		},
+		{
+			"path": "pages/inquiry/inquiry-form/parts-add",
+			"style": {
+				"navigationBarTitleText": "添加配件"
+			}
+		},
+		{
+			"path": "pages/inquiry/inquiry-form/scan-result",
+			"style": {
+				"navigationBarTitleText": "识别结果"
+			}
+		},
+		 {
+			"path": "pages/inquiry/inquiry-form/cartype-rechoose",
+			"style": {
+				"navigationBarTitleText": "车型选择"
+			}
+		},
+		{
+			"path": "pages/inquiry/inquiry-list",
+			"style": {
+				"navigationBarTitleText": "我的询价"
+			}
+		},
+		{
+			"path": "pages/inquiry/inquiry-detail",
+			"style": {
+				"navigationBarTitleText": "询价详情"
+			}
+		},
+		{
+			"path": "pages/inquiry/quotation-detail",
+			"style": {
+				"navigationBarTitleText": "报价详情"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "汽配人商圈",
+		"backgroundColor": "#F7F7F7",
+		"mp-baidu": {
+			"navigationBarBackgroundColor": "#F7F7F7"
+		},
+		"mp-weixin":{
+			"navigationBarBackgroundColor": "#F7F7F7"
+		}
+	},
+	"tabBar": {
+		"color": "#a9b7b7",
+		"selectedColor": "#707070",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "black",
+		"position": "bottom",
+		"list": [
+			{
+				"iconPath": "static/tabbar/icon-home.png",
+				"selectedIconPath": "static/tabbar/icon-homesolid.png",
+				"pagePath": "pages/home/index",
+				"text": "首页"
+			},
+			{
+				"iconPath": "static/tabbar/icon-findout.png",
+				"selectedIconPath": "static/tabbar/icon-findoutsolid.png",
+				"pagePath": "pages/find-out/index",
+				"text": "发现"
+			},
+			{
+				"iconPath": "static/tabbar/icon-user.png",
+				"selectedIconPath": "static/tabbar/icon-usersolid.png",
+				"pagePath": "pages/user-center/my-index",
+				"text": "我的"
+			}
+		]
+	},
+	"networkTimeout": {
+		"request": 10000,
+		"downloadFile": 10000
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	},
+	"debug": true
+}
